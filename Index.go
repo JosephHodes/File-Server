@@ -12,6 +12,7 @@ func main() {
 	switch mode {
 	case "TEST":
 		err := FuncTests.FuncTest()
+		log.Println("Func tests succeeded ")
 		if err != nil {
 			log.Fatalln(err)
 		}
