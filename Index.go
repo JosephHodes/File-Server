@@ -8,12 +8,13 @@ import (
 )
 
 func main() {
-	switch strings.ToUpper(os.Getenv("Mode")){
+	mode := strings.ToUpper(os.Getenv("Mode"))
+	switch mode {
 	case "TEST":
 		err := FuncTests.FuncTest()
 		if err != nil {
 			log.Fatalln(err)
 		}
 	}
-	log.Fatalln("fatal error couldn't get mode it was defined as: "+os.Getenv())
+	log.Fatalln("fatal error couldn't get mode it was defined as: "+mode)
 }
