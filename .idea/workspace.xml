@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46e1a835-5b0c-4eec-b934-cfc81f9a5824" name="Default Changelist" comment="">
+    <list default="true" id="46e1a835-5b0c-4eec-b934-cfc81f9a5824" name="Default Changelist" comment="Finished IsRateLimited Function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.go" beforeDir="false" afterPath="$PROJECT_DIR$/Index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Utils/RateLimiter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Utils/RateLimiter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/FuncTests/FuncTester.go" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/FuncTests/FuncTester.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/HttpTests/HttpTest.go" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/HttpTests/HttpTest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.go" beforeDir="false" afterPath="$PROJECT_DIR$/index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Utils/RateLimiter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Utils/ratelimiter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/FuncTests/FuncTester.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/HttpTests/HttpTest.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,13 +93,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished IsRateLimited Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished IsRateLimited Function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/Index.go</url>
-          <line>17</line>
+          <url>file://$PROJECT_DIR$/index.go</url>
+          <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -4,7 +4,6 @@ import (
 	utils "./Server/Utils"
 	"./Tests/FuncTests"
 	"github.com/go-redis/redis"
-	"github.com/go-redsync/redsync"
 	"github.com/go-redsync/redsync/redis/redigo"
 	redis3 "github.com/gomodule/redigo/redis"
 	"log"
@@ -28,7 +27,6 @@ func main() {
 		Dial: func() (redis3.Conn, error) { return redis3.Dial("tcp", "localhost:6379") },
 	}
 	pool := redigo.NewPool(pools)
-	utils.Mutex = redsync.New(pool)
 	log.Println(reflect.TypeOf(pool))
 
 	errr := utils.IsRateLimited("111.222.222.333", redisClient, 2, time.Second*10, pool)
