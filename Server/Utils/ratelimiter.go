@@ -10,7 +10,7 @@ import (
 // IsRateLimited this function you enter the ip and the amount you want to rate limit
 // then the expiration for the time you want your ip to expire and it checks the and blocks ips that surpass
 // the rate limit
-func IsRateLimited(ip string, redisClient *redis.Client, rateLimit int64, expiration time.Duration, pool interface{}) error {
+func IsRateLimited(ip string, redisClient *redis.Client, rateLimit int64, expiration time.Duration) error {
 	commandable := redisClient.SetNX(redisClient.Context(), ip, 0, expiration)
 	if commandable.Err() != nil {
 		return fmt.Errorf("setting content in redis : ratelimit %w", commandable.Err())
